@@ -65,6 +65,7 @@ defmodule LinkPreview.Mixfile do
       # required
       {:floki, "~> 0.21.0"},
       {:tesla, "~> 1.2.1"},
+      {:html5ever, git: "https://github.com/PabloG6/html5ever_elixir.git"},
 
       # optional
       {:html_entities, "~> 0.4", optional: true},
