@@ -4,7 +4,7 @@ defmodule LinkPreview.Parsers.Html do
   """
   alias LinkPreview.{Page, ParallelHelper, Requests}
   use LinkPreview.Parsers.Basic
-
+  import Mogrify
   @doc """
     Get page title based on first encountered title tag.
 
