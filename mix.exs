@@ -69,7 +69,7 @@ defmodule LinkPreview.Mixfile do
 
       # optional
       {:html_entities, "~> 0.4", optional: true},
-      {:mogrify, "~> 0.4.0", optional: true},
+      {:mogrify, "~> 0.7.3", optional: true},
       {:tempfile, "~> 0.1.0", optional: true},
 
       # testing/docs
