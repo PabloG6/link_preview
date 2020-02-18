@@ -3,7 +3,6 @@ defmodule LinkPreview.Parsers.Html do
     Parser implementation based on html tags.
   """
   alias LinkPreview.{Page, ParallelHelper, Requests}
-
   use LinkPreview.Parsers.Basic
 
   @doc """

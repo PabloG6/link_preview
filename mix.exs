@@ -68,9 +68,9 @@ defmodule LinkPreview.Mixfile do
       {:html5ever, git: "https://github.com/PabloG6/html5ever_elixir.git"},
 
       # optional
-      {:html_entities, "~> 0.4", optional: true},
-      {:mogrify, "~> 0.7.3", optional: true},
-      {:tempfile, "~> 0.1.0", optional: true},
+      {:html_entities, "~> 0.4"},
+      {:mogrify, "~> 0.7.3"},
+      {:tempfile, "~> 0.1.0"},
 
       # testing/docs
       {:excoveralls, "~> 0.6", only: :test},
