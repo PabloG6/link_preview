@@ -53,7 +53,7 @@ defmodule LinkPreview.Mixfile do
     [applications: applications(Mix.env())]
   end
 
-  def applications(:all), do: [:floki, :inets, :logger, :tesla]
+  def applications(:all), do: [:hackney, :floki, :inets, :logger, :tesla]
   def applications(:test), do: applications(:all) ++ [:httparrot]
   def applications(_), do: applications(:all)
 
@@ -64,11 +64,13 @@ defmodule LinkPreview.Mixfile do
     [
       # required
       {:floki, "~> 0.21.0"},
-      {:tesla, "~> 1.2.1"},
+      {:tesla, "~> 1.3.2"},
       {:html5ever, git: "https://github.com/PabloG6/html5ever_elixir.git"},
 
+      {:hackney, "~> 1.6"},
+      {:jason, ">= 1.0.0"},
       # optional
-      {:html_entities, "~> 0.4"},
+      {:html_entities, "~> 0.4", optional: true},
       {:mogrify, "~> 0.7.3"},
       {:tempfile, "~> 0.1.0"},
 
